@@ -1,0 +1,22 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{{ global.title }}</title>
+  		{{ "app.css" | asset_url | stylesheet_tag }}
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+  		<script src="{{ "modernizr.js" | asset_url }}"></script>
+        <link rel="shortcut icon" href="favicon.ico">
+	</head>
+	<body>
+		{% block content %}{% endblock %}
+  		{% include "scripts" %}
+
+
+        <!-- Instanclick for improvement of latency links -->
+        <script src="{{ "instantclick.min.js" | asset_url }}"></script>
+        <script data-no-instant>InstantClick.init();</script>
+
+	</body>
+</html>
