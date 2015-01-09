@@ -1,3 +1,6 @@
+/* -----------------------------------------
+   Vars and Mixins
+----------------------------------------- */
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -6,4 +9,320 @@
  * HTML and General styles
  */
 body {
-  color: red; }
+  display: inline-block; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #12242e;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; }
+  body h2 {
+    font-weight: 200;
+    color: #622B63;
+    font-size: 2.5em; }
+  body p {
+    font-size: 1.2em;
+    color: #656565;
+    font-weight: 200; }
+  body .button {
+    background: #622B63;
+    border-bottom: 4px solid #3C283C;
+    font-weight: 200 !important;
+    letter-spacing: 0.03em !important;
+    text-shadow: 0px 2px 0px #12242e;
+    filter: dropshadow(color=#12242e, offx=0, offy=1); }
+  body a {
+    transition: 0.6s;
+    font-weight: 500;
+    color: #974298; }
+    body a:hover {
+      color: #743375; }
+
+/* end body */
+/**
+ * HEADER
+ */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #3C283C;
+  text-align: center;
+  padding: 1em 0 0 0;
+  border-bottom: 1px solid #5b3c5b;
+  /* end sub-nav-custom */ }
+  .header .logo {
+    opacity: 0.9;
+    transition: opacity 0.6s; }
+    .header .logo:hover {
+      opacity: 1; }
+    .header .logo img {
+      margin-top: -5px !important; }
+  .header .sub-nav-custom {
+    text-align: right;
+    padding-top: 0.3em; }
+    .header .sub-nav-custom dd {
+      display: inline-block;
+      margin-left: 0.3em; }
+      .header .sub-nav-custom dd a {
+        display: inline-block;
+        font-weight: 200;
+        border: 1px solid #a87fa8;
+        padding: 0.2em 1em;
+        color: #a87fa8;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        transition: border-color 0.6s, color 0.6s;
+        /* en new */ }
+        .header .sub-nav-custom dd a.new {
+          border: 1px solid #d1bcd1;
+          color: #d1bcd1;
+          position: relative; }
+          .header .sub-nav-custom dd a.new:after {
+            content: "new";
+            font-weight: 500;
+            display: inline-block;
+            background: #ff8000;
+            color: #3C283C;
+            font-size: 0.7em;
+            padding: 0.4em 0.3em;
+            position: absolute;
+            top: -10px;
+            left: -12px;
+            -webkit-border-radius: 30px;
+            border-radius: 30px;
+            transform: rotate(-25deg);
+            -ms-transform: rotate(-25deg);
+            -moz-transform: rotate(-25deg);
+            -webkit-transform: rotate(-25deg);
+            -o-transform: rotate(-25deg);
+            opacity: 0.9; }
+        .header .sub-nav-custom dd a.active, .header .sub-nav-custom dd a:hover {
+          border: 1px solid #FFF;
+          color: #FFF; }
+
+/* end header */
+/**
+ * HERO
+ */
+.hero {
+  background: #175c7d url("../img/circulo-podemos-la-muela-bg.jpg") right 25% no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  padding-top: 80px; }
+  .hero .hero-left {
+    background: rgba(60, 40, 60, 0.7);
+    padding: 20px; }
+  .hero h1, .hero h2, .hero h3, .hero small {
+    color: #FFF; }
+    .hero h1 strong, .hero h2 strong, .hero h3 strong, .hero small strong {
+      font-weight: 400; }
+  .hero .hero-left {
+    max-width: 60%;
+    text-align: right;
+    margin-top: 50px; }
+  .hero .logo {
+    display: inline-block;
+    background: url("../img/logo-sosz-big.png") top right no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 290px;
+    text-indent: -20000px;
+    overflow: hidden;
+    font-size: 0.1em;
+    color: #12242e; }
+  .hero h3 {
+    margin-top: 1.5em;
+    font-size: 1.8em;
+    text-shadow: 0px 2px 0px #12242e;
+    filter: dropshadow(color=#12242e, offx=0, offy=1); }
+  .hero .twitter {
+    text-indent: 2em;
+    font-size: 0.6em;
+    margin: 0.4em 0 0 0;
+    background: #782979 url("../img/icon-twitter.png") 1.2em center no-repeat;
+    transition: background-color 0.5s; }
+    .hero .twitter:hover {
+      background-color: #13648b; }
+
+/* end hero */
+/**
+ * DESCRIPTION
+ */
+.description {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .description .footer {
+    border-top: 2px solid #1b2f3b;
+    border-bottom: 2px solid #1b2f3b;
+    margin-top: 40px;
+    padding: 1em;
+    text-align: center !important; }
+
+/* end description */
+/**
+ * T-SHIRT
+ */
+.tshirt {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #175c7d url("../img/las-cortes-de-aragon.jpg") center top no-repeat;
+  background-size: cover;
+  min-height: 850px;
+  text-align: center; }
+  .tshirt h2 {
+    color: #FFF;
+    background: rgba(98, 43, 99, 0.7);
+    padding: 20px;
+    margin-bottom: 32px; }
+  .tshirt img {
+    width: 447px !important; }
+  .tshirt .button {
+    background: rgba(27, 47, 59, 0.2);
+    border: 3px solid white;
+    margin-top: -60px;
+    margin-right: 20px;
+    transition: background 0.6s; }
+    .tshirt .button:hover {
+      background: #175c7d; }
+    .tshirt .button:last-child {
+      margin-right: 0; }
+
+/* end tshirt */
+/**
+ * WHERE
+ */
+.where-map, .where-photo {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+/* end where-map */
+.where-map a.label {
+  background: #622B63;
+  color: #FFF;
+  transition: background 0.6s; }
+  .where-map a.label:hover {
+    background: #3C283C;
+    color: #FFF; }
+.where-map h5 {
+  background: rgba(255, 255, 255, 0.7);
+  border: 10px solid rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+/* end where-map */
+.where-photo {
+  background: #3C283C url("../img/la-muela.jpg") center bottom no-repeat;
+  background-size: cover;
+  min-height: 600px; }
+
+/* end where-photo */
+/**
+ * GUESTS
+ */
+.guests {
+  background: #e9e7e9;
+  padding-top: 120px;
+  padding-bottom: 80px; }
+  .guests li {
+    /* end box */ }
+    .guests li .box {
+      display: block;
+      background: #fcfcfc;
+      border-top: 1px solid #FFF;
+      border-left: 1px solid #FFF;
+      border-right: 1px solid #b2b2b2;
+      border-bottom: 1px solid #b2b2b2;
+      margin: 0;
+      padding: 1em;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      transition: outline 0.7s;
+      outline: 3px solid transparent; }
+      .guests li .box.link:hover {
+        color: #FFF;
+        outline: 3px solid #a28ea2;
+        color: #773977; }
+      .guests li .box .avatar, .guests li .box .data {
+        display: inline-block !important;
+        width: 18%;
+        margin-right: 5%;
+        vertical-align: top; }
+      .guests li .box .avatar {
+        border: 1px solid #a28ea2; }
+      .guests li .box .data {
+        width: 70%; }
+      .guests li .box p {
+        font-size: 1.1em;
+        font-weight: 400;
+        margin: -5px 0 0 0;
+        color: #3C283C; }
+      .guests li .box .label {
+        margin: 0;
+        font-size: 0.8em;
+        background: #a87fa8;
+        font-weight: 500;
+        color: #FFF; }
+
+/* end guests */
+/**
+ * PARTNERS
+ */
+.partners {
+  padding-top: 120px;
+  padding-bottom: 80px; }
+  .partners h2 {
+    border-bottom: 1px solid #622B63;
+    margin-bottom: 80px; }
+  .partners .logos {
+    text-align: center;
+    margin-bottom: 40px; }
+    .partners .logos a {
+      margin-right: 5%;
+      transition: opacity 0.5s; }
+      .partners .logos a:last-child {
+        margin-right: 0; }
+      .partners .logos a:hover {
+        opacity: 0.7; }
+
+/* end partners */
+/**
+ * ORGANIZE
+ */
+.organize {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #12242e url("../img/cachirulo-valley-bg.jpg") center -40px no-repeat;
+  background-size: cover;
+  min-height: 560px; }
+  .organize h2 {
+    color: #FFF;
+    margin-top: 60%; }
+
+/* end organize */
+/**
+ * PAGE FOOTER
+ */
+.page-footer {
+  background: #3C283C; }
+  .page-footer p, .page-footer small {
+    color: #FFF;
+    opacity: 0.7;
+    text-align: center; }
+  .page-footer p {
+    padding-top: 20px;
+    padding-bottom: 80px; }
+
+/* end page-footer */
+/**
+ * LAST MINUTE
+ */
+.last-minute {
+  text-align: center; }
+  .last-minute iframe {
+    display: inline-block;
+    border: 1px solid white !important;
+    width: 70%;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 80px; }
+
+/* end last-minute */

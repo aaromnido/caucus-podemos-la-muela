@@ -4,22 +4,24 @@
   },
   "customRubyPath": null,
   "debug": false,
-  "domain": "http://sosz14.cachirulovalley.com/",
-  "followLeader": true,
+  "domain": null,
+  "followLeader": false,
   "lintScripts": false,
+  "modelSource": null,
   "preprocessorLocations": [
-    "assets"
+    "assets/scss"
   ],
-  "preprocessorScriptOutput": "assets/js",
+  "preprocessorScriptOutput": null,
   "preprocessorStyleOutput": "assets/css",
-  "projectDescription": "Startup Open Space Zaragoza 2014",
-  "projectName": "SOSZ14",
-  "publishedId": "11528",
-  "serverHostname": "192.168.2.33",
+  "projectDescription": "My project description",
+  "projectName": "caucus-podemos-la-muela-2",
+  "publishedId": null,
+  "serverHostname": null,
   "serverPort": null,
+  "simpleModePartnerServer": null,
   "templateDefaultLayout": "layout",
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
-  "type": "mixture",
+  "type": "simple",
   "useCompass": false
 }
